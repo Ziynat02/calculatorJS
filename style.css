@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c6c5c5;
+}
+.calculator{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 18px 37px 18px;
+    background: linear-gradient( #242833, #16181D);
+}
+.display input{
+    text-align: left;
+}
+input:active{
+    transform: translateY(2.5px);
+}
+.lightCalculator{
+    background: #DEE1EA;
+}
+.dayNight{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.dayNight .sun{
+    display:none;
+}
+.calculator input{
+    border:3px solid #282f41;
+    outline:4px solid #2c3345;
+    padding: 20px 29px;
+    border-radius: 16px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.01),5px 5px 15px rgba(0,0,0,0.3);
+    background:linear-gradient(140deg,#252B38 9%,#333949 );
+    font-size: 21px;
+    cursor: pointer;
+    margin: 10px;
+    color: #e3f9ff;
+}
+.lightCalculator input{
+    border:3px solid #dae2f1;
+    outline:4px solid #d3dae7;
+    box-shadow: -8px -8px 15px rgba(220, 216, 216, 0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(#CED2DE, #ECEFF4);
+    color: #000;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    background:transparent;
+    border-radius: 10px;
+
+}
+form div .clear{
+    border:3px solid #575e70;
+    outline:4px solid #616878;
+    background:linear-gradient(320deg,#697287 19%,#464d61) ;
+    padding: 20px 40px;
+}
+.lightCalculator .clear{
+    border-radius: 18px;
+    background: linear-gradient(134deg, #A0ADC4 15.47%, #C5CEDF 94.71%);
+    color: #000;
+    border:3px solid #afbcd1;
+    outline:4px solid #b0b8c6;
+}
+form div .nol{
+    padding: 20px 79px;
+}
+form div .operator{
+    border:3px solid #df822c;
+    outline:4px solid #f4861f;
+    background: linear-gradient(140deg,#D9781F 49%,#ef933e);
+}
+form .display .enterNumber{
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 24px;
+}
+@media (min-width:390px) and (max-width:844px) {
+    .calculator{
+        padding: 40px 13px 25px 13px;
+        width: 356px;
+        margin: 0 auto;
+    }
+    .calculator input{
+        border:2px solid #282f41;
+        outline:3px solid #2c3345;
+        padding: 15px 20px;
+        font-size: 16px;
+        margin: 7px;
+
+    }
+    .lightCalculator input{
+        border:2px solid #dae2f1;
+        outline:3px solid #d3dae7;
+    }
+    
+    form .display{
+        margin:14px 0;    
+    }
+    form div .clear{
+        border:2px solid #575e70;
+        outline:3px solid #616878;
+        background:linear-gradient(320deg,#697287 19%,#464d61) ;
+        padding: 14px 28px;
+    }
+    .lightCalculator .clear{
+        border:2px solid #afbcd1;
+        outline:3px solid #b0b8c6;
+    }
+    form div .nol{
+        padding: 14px 57px;
+    }
+    form div .operator{
+        border:2px solid #df822c;
+        outline:3px solid #f4861f;
+    }
+}
+@media(max-width:390px) {
+    .calculator{
+        padding: 20px 8px 16px 8px;
+        width: 256px;
+    }
+    .calculator input{
+        padding: 8px 11.5px;
+        font-size: 10px;
+        margin: 7px;
+
+    }    
+    form .display{
+        margin:10px 0;    
+    }
+    form div .clear{
+        padding: 8px 18.5px;
+    }
+    form div .nol{
+        padding: 8px 39px;
+    }
+    form div .operator{
+        border:2px solid #df822c;
+        outline:3px solid #f4861f;
+    }
+    i{
+        font-size: 5px;
+    }
+}
